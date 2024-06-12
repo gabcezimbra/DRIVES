@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative; /* Adicionado posicionamento relativo */
+}
+
+h1 {
+    font-size: 36px; /* Tamanho da fonte do título */
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 24px; /* Tamanho da fonte do subtítulo */
+}
+
+.drive {
+    color: red; /* Cor vermelha para a palavra "Drives" */
+}
+
+.video-container {
+    margin: 20px 0;
+    position: relative; /* Define o posicionamento relativo */
+}
+
+button {
+    padding: 15px 40px; /* Tamanho do botão ajustado */
+    background-color: #4CAF50; /* Novo tom de verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    animation: pulse 2s infinite alternate; /* Animação de pulsação */
+    margin: 0 auto; /* Isso centralizará o botão horizontalmente */
+    display: block; /* Garante que o botão será exibido como bloco para que as margens automáticas funcionem */
+}
+
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7); /* Cor inicial da sombra */
+    }
+    to {
+        box-shadow: 0 0 0 10px rgba(76, 175, 80, 0); /* Cor final da sombra */
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.footer-text {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
